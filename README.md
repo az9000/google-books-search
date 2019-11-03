@@ -33,8 +33,6 @@ The app utilizes React lifecycle methods to query and display books based on use
 ## Demo
 [google-books-search demo](https://my-google-search-app.herokuapp.com/)
 
-## Challenges
-
 ## Acknowledgements
 1. [Bootcamp solved activity](https://smu.bootcampcontent.com/SMU-Coding-Bootcamp/SMUDA201906FSF1/tree/master/20-react/01-Activities/11-Stu_ReactRouter/Solved)
 1. [Goole Books API](https://developers.google.com/books/docs/v1/using)
