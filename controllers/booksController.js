@@ -48,7 +48,7 @@ module.exports = {
       };
     }
 
-    let options = { upsert: true, new: true, setDefaultsOnInsert: true };
+    let options = { upsert: true, new: true, setDefaultsOnInsert: true, useFindAndModify: false };
 
     // Find the document
     db.Book.findOneAndUpdate(filter, update, options, function(error, result) {
@@ -56,11 +56,6 @@ module.exports = {
 
       res.json(result);
     });
-  },
-  update: function(req, res) {
-    db.Book.findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
     console.log('remove', req.params.id)

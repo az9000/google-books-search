@@ -68,7 +68,7 @@ class Saved extends Component {
                         <button
                           type="button"
                           onClick={() => this.deleteBook(book._id)}
-                          className="btn btn-secondary"
+                          className="btn btn-secondary btn-block"
                           style={{ marginRight: 10 }}
                         >
                           Delete

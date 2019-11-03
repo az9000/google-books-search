@@ -22,13 +22,10 @@ class Books extends Component {
     });
   }
   
-
-  
-
   saveBook = info => {
     API.saveBook(info)
       .then(res => {
-        console.log("success:", res.data._id);
+        console.log("success:", res.data._id);        
       })
       .catch(err => console.log(err));
   };
