@@ -106,7 +106,7 @@ class Books extends Component {
                     <Row>
                       <Col size="md-10">
                         <h5>{book.volumeInfo.title}</h5>
-                        <h6>{book.volumeInfo.authors.toString()}</h6>
+                        <h6>{book.volumeInfo.authors}</h6>
                       </Col>
                       <Col size="md-1">
                         <button
