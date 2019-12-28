@@ -54,6 +54,7 @@ class Books extends Component {
       });
       API.findBook(this.state.title)
         .then(res => {
+          
           ls.set('books', res.data)
           this.setState({
             books: res.data,
@@ -101,10 +102,10 @@ class Books extends Component {
             {/* if there's a list */}
             {this.state.books.length ? (
               <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book.volumeInfo.publishedDate}>
+                {this.state.books.map(book => (                  
+                  <ListItem key={book.id}>
                     <Row>
-                      <Col size="md-10">
+                      <Col size="md-10">                        
                         <h5>{book.volumeInfo.title}</h5>
                         <h6>{book.volumeInfo.authors}</h6>
                       </Col>
@@ -121,6 +122,8 @@ class Books extends Component {
                       <Col size="md-1">                                              
                           <a
                             href={book.volumeInfo.infoLink}
+                            target="_blank"
+                            
                             className="btn btn-secondary btn-block"                            
                           >
                           View
