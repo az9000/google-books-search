@@ -123,7 +123,7 @@ class Books extends Component {
                           <a
                             href={book.volumeInfo.infoLink}
                             target="_blank"
-                            line 126 rel="noopener noreferrer"
+                            rel="noopener noreferrer"
                             className="btn btn-secondary btn-block"                            
                           >
                           View
